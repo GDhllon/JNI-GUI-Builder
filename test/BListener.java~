@@ -1,0 +1,22 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class BListener implements ActionListener
+{
+	
+	private testFieldEdit dialogInterface;
+	
+	public BListener(testFieldEdit theInterface)
+	{
+		
+		dialogInterface = theInterface;
+	}
+
+	@Override
+
+	public void actionPerformed(ActionEvent event)
+	{
+		dialogInterface.appendToStatusArea("Button2 Pressed!\n");
+	}
+
+}
